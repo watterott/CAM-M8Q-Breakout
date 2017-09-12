@@ -8932,8 +8932,8 @@ all kinds in 0402 and 0603</description>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="D_SEL" library="we-rcl" deviceset="JUMPER2" device="-0603-NC"/>
+<part name="J1" library="we-con" deviceset="MA06-1" device=""/>
 <part name="J2" library="we-con" deviceset="MA06-1" device=""/>
-<part name="J3" library="we-con" deviceset="MA06-1" device=""/>
 <part name="VCC-VIO" library="we-rcl" deviceset="JUMPER2" device="-0603-NC"/>
 <part name="VCC1" library="supply1" deviceset="VCCIO" device=""/>
 <part name="P+1" library="supply1" deviceset="VCC" device=""/>
@@ -8943,9 +8943,9 @@ all kinds in 0402 and 0603</description>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="GPS" library="we-sensor" deviceset="CAM-M8Q" device=""/>
-<part name="R1" library="we-rcl" deviceset="RESISTOR" device="-0402"/>
-<part name="R2" library="we-rcl" deviceset="RESISTOR" device="-0402"/>
-<part name="R3" library="we-rcl" deviceset="RESISTOR" device="-0402"/>
+<part name="R1" library="we-rcl" deviceset="RESISTOR" device="-0402" value="nc"/>
+<part name="R2" library="we-rcl" deviceset="RESISTOR" device="-0402" value="nc"/>
+<part name="R3" library="we-rcl" deviceset="RESISTOR" device="-0402" value="0"/>
 <part name="OUT" library="we-con" deviceset="U.FL" device="" value="RF_Out"/>
 <part name="IN" library="we-con" deviceset="U.FL" device="" value="RF_In"/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
@@ -8973,29 +8973,29 @@ Designed by Watterott electronic</text>
 <instance part="GND2" gate="1" x="67.31" y="92.71"/>
 <instance part="X3" gate="X" x="177.8" y="7.62"/>
 <instance part="X4" gate="X" x="184.15" y="7.62"/>
-<instance part="BAT" gate="A" x="67.31" y="78.74" rot="MR0"/>
-<instance part="GND1" gate="1" x="77.47" y="71.12"/>
-<instance part="GND6" gate="1" x="88.9" y="86.36"/>
+<instance part="BAT" gate="A" x="68.58" y="77.47" rot="MR0"/>
+<instance part="GND1" gate="1" x="78.74" y="69.85"/>
+<instance part="GND6" gate="1" x="92.71" y="92.71"/>
 <instance part="D_SEL" gate="J" x="149.86" y="120.65"/>
-<instance part="J2" gate="J" x="210.82" y="96.52" rot="R180"/>
-<instance part="J3" gate="J" x="210.82" y="120.65" rot="R180"/>
+<instance part="J1" gate="J" x="212.09" y="118.11" rot="R180"/>
+<instance part="J2" gate="J" x="212.09" y="92.71" rot="R180"/>
 <instance part="VCC-VIO" gate="J" x="114.3" y="80.01"/>
 <instance part="VCC1" gate="G$1" x="77.47" y="107.95"/>
 <instance part="P+1" gate="VCC" x="104.14" y="80.01" rot="R90"/>
 <instance part="VCC2" gate="G$1" x="124.46" y="80.01" rot="R270"/>
 <instance part="C1" gate="C" x="58.42" y="97.79" rot="R90"/>
-<instance part="P+3" gate="VCC" x="184.15" y="110.49"/>
+<instance part="P+3" gate="VCC" x="185.42" y="130.81"/>
 <instance part="GND4" gate="1" x="158.75" y="118.11"/>
-<instance part="GND5" gate="1" x="184.15" y="99.06"/>
+<instance part="GND5" gate="1" x="185.42" y="120.65"/>
 <instance part="GPS" gate="IC" x="114.3" y="107.95"/>
 <instance part="R1" gate="R" x="59.69" y="113.03"/>
-<instance part="R2" gate="R" x="59.69" y="127"/>
-<instance part="R3" gate="R" x="64.77" y="118.11" rot="R90"/>
-<instance part="OUT" gate="J" x="48.26" y="127"/>
+<instance part="R2" gate="R" x="59.69" y="128.27"/>
+<instance part="R3" gate="R" x="64.77" y="120.65" rot="R90"/>
+<instance part="OUT" gate="J" x="48.26" y="128.27"/>
 <instance part="IN" gate="J" x="48.26" y="113.03"/>
-<instance part="GND7" gate="1" x="48.26" y="119.38"/>
+<instance part="GND7" gate="1" x="48.26" y="120.65"/>
 <instance part="GND8" gate="1" x="48.26" y="105.41"/>
-<instance part="VCC3" gate="G$1" x="182.88" y="133.35"/>
+<instance part="VCC3" gate="G$1" x="185.42" y="105.41"/>
 <instance part="LOGO1" gate="L" x="207.01" y="7.62"/>
 </instances>
 <busses>
@@ -9016,12 +9016,11 @@ Designed by Watterott electronic</text>
 <segment>
 <pinref part="BAT" gate="A" pin="GND"/>
 <pinref part="GND1" gate="1" pin="GND"/>
-<wire x1="74.93" y1="73.66" x2="77.47" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="72.39" x2="78.74" y2="72.39" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND6" gate="1" pin="GND"/>
-<wire x1="96.52" y1="95.25" x2="88.9" y2="95.25" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="95.25" x2="88.9" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="95.25" x2="92.71" y2="95.25" width="0.1524" layer="91"/>
 <pinref part="GPS" gate="IC" pin="GND"/>
 </segment>
 <segment>
@@ -9030,9 +9029,9 @@ Designed by Watterott electronic</text>
 <wire x1="158.75" y1="120.65" x2="154.94" y2="120.65" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="J2" gate="J" pin="2"/>
+<pinref part="J1" gate="J" pin="2"/>
 <pinref part="GND5" gate="1" pin="GND"/>
-<wire x1="203.2" y1="101.6" x2="184.15" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="204.47" y1="123.19" x2="185.42" y2="123.19" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="OUT" gate="J" pin="GND"/>
@@ -9062,18 +9061,18 @@ Designed by Watterott electronic</text>
 <wire x1="106.68" y1="80.01" x2="109.22" y2="80.01" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="J2" gate="J" pin="1"/>
-<wire x1="203.2" y1="104.14" x2="184.15" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="184.15" y1="104.14" x2="184.15" y2="107.95" width="0.1524" layer="91"/>
+<pinref part="J1" gate="J" pin="1"/>
+<wire x1="204.47" y1="125.73" x2="185.42" y2="125.73" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="125.73" x2="185.42" y2="128.27" width="0.1524" layer="91"/>
 <pinref part="P+3" gate="VCC" pin="VCC"/>
 </segment>
 </net>
 <net name="VBCKP" class="0">
 <segment>
 <wire x1="96.52" y1="97.79" x2="83.82" y2="97.79" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="97.79" x2="83.82" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="97.79" x2="83.82" y2="82.55" width="0.1524" layer="91"/>
 <pinref part="BAT" gate="A" pin="VBAT"/>
-<wire x1="83.82" y1="83.82" x2="74.93" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="82.55" x2="76.2" y2="82.55" width="0.1524" layer="91"/>
 <pinref part="GPS" gate="IC" pin="VBCKP"/>
 </segment>
 </net>
@@ -9084,9 +9083,9 @@ Designed by Watterott electronic</text>
 <pinref part="GPS" gate="IC" pin="!RESET"/>
 </segment>
 <segment>
-<wire x1="203.2" y1="125.73" x2="193.04" y2="125.73" width="0.1524" layer="91"/>
-<pinref part="J3" gate="J" pin="2"/>
-<label x="193.04" y="125.73" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="204.47" y1="97.79" x2="194.31" y2="97.79" width="0.1524" layer="91"/>
+<pinref part="J2" gate="J" pin="2"/>
+<label x="194.31" y="97.79" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="SAFEBOOT" class="0">
@@ -9096,9 +9095,9 @@ Designed by Watterott electronic</text>
 <pinref part="GPS" gate="IC" pin="!SAFEBOOT"/>
 </segment>
 <segment>
-<wire x1="193.04" y1="123.19" x2="203.2" y2="123.19" width="0.1524" layer="91"/>
-<pinref part="J3" gate="J" pin="3"/>
-<label x="193.04" y="123.19" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="194.31" y1="95.25" x2="204.47" y2="95.25" width="0.1524" layer="91"/>
+<pinref part="J2" gate="J" pin="3"/>
+<label x="194.31" y="95.25" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="LNA_EN" class="0">
@@ -9108,9 +9107,9 @@ Designed by Watterott electronic</text>
 <pinref part="GPS" gate="IC" pin="LNA_EN"/>
 </segment>
 <segment>
-<wire x1="193.04" y1="120.65" x2="203.2" y2="120.65" width="0.1524" layer="91"/>
-<pinref part="J3" gate="J" pin="4"/>
-<label x="193.04" y="120.65" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="194.31" y1="92.71" x2="204.47" y2="92.71" width="0.1524" layer="91"/>
+<pinref part="J2" gate="J" pin="4"/>
+<label x="194.31" y="92.71" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="TXD" class="0">
@@ -9120,9 +9119,9 @@ Designed by Watterott electronic</text>
 <pinref part="GPS" gate="IC" pin="TX/MISO"/>
 </segment>
 <segment>
-<wire x1="193.04" y1="99.06" x2="203.2" y2="99.06" width="0.1524" layer="91"/>
-<label x="193.04" y="99.06" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="J2" gate="J" pin="3"/>
+<wire x1="194.31" y1="120.65" x2="204.47" y2="120.65" width="0.1524" layer="91"/>
+<label x="194.31" y="120.65" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="J1" gate="J" pin="3"/>
 </segment>
 </net>
 <net name="RXD" class="0">
@@ -9132,9 +9131,9 @@ Designed by Watterott electronic</text>
 <pinref part="GPS" gate="IC" pin="RX/MOSI"/>
 </segment>
 <segment>
-<wire x1="193.04" y1="96.52" x2="203.2" y2="96.52" width="0.1524" layer="91"/>
-<label x="193.04" y="96.52" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="J2" gate="J" pin="4"/>
+<wire x1="194.31" y1="118.11" x2="204.47" y2="118.11" width="0.1524" layer="91"/>
+<label x="194.31" y="118.11" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="J1" gate="J" pin="4"/>
 </segment>
 </net>
 <net name="SCL" class="0">
@@ -9144,9 +9143,9 @@ Designed by Watterott electronic</text>
 <pinref part="GPS" gate="IC" pin="SCL/SCK"/>
 </segment>
 <segment>
-<wire x1="193.04" y1="93.98" x2="203.2" y2="93.98" width="0.1524" layer="91"/>
-<label x="193.04" y="93.98" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="J2" gate="J" pin="5"/>
+<wire x1="194.31" y1="115.57" x2="204.47" y2="115.57" width="0.1524" layer="91"/>
+<label x="194.31" y="115.57" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="J1" gate="J" pin="5"/>
 </segment>
 </net>
 <net name="SDA" class="0">
@@ -9156,9 +9155,9 @@ Designed by Watterott electronic</text>
 <pinref part="GPS" gate="IC" pin="SDA/!CS"/>
 </segment>
 <segment>
-<wire x1="193.04" y1="91.44" x2="203.2" y2="91.44" width="0.1524" layer="91"/>
-<label x="193.04" y="91.44" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="J2" gate="J" pin="6"/>
+<wire x1="194.31" y1="113.03" x2="204.47" y2="113.03" width="0.1524" layer="91"/>
+<label x="194.31" y="113.03" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="J1" gate="J" pin="6"/>
 </segment>
 </net>
 <net name="EXT_INT" class="0">
@@ -9168,9 +9167,9 @@ Designed by Watterott electronic</text>
 <pinref part="GPS" gate="IC" pin="EXT_INT"/>
 </segment>
 <segment>
-<wire x1="193.04" y1="118.11" x2="203.2" y2="118.11" width="0.1524" layer="91"/>
-<pinref part="J3" gate="J" pin="5"/>
-<label x="193.04" y="118.11" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="194.31" y1="90.17" x2="204.47" y2="90.17" width="0.1524" layer="91"/>
+<pinref part="J2" gate="J" pin="5"/>
+<label x="194.31" y="90.17" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="TIMEPULS" class="0">
@@ -9180,9 +9179,9 @@ Designed by Watterott electronic</text>
 <pinref part="GPS" gate="IC" pin="TIMEPULS"/>
 </segment>
 <segment>
-<wire x1="193.04" y1="115.57" x2="203.2" y2="115.57" width="0.1524" layer="91"/>
-<pinref part="J3" gate="J" pin="6"/>
-<label x="193.04" y="115.57" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="194.31" y1="87.63" x2="204.47" y2="87.63" width="0.1524" layer="91"/>
+<pinref part="J2" gate="J" pin="6"/>
+<label x="194.31" y="87.63" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="RFIN" class="0">
@@ -9191,6 +9190,7 @@ Designed by Watterott electronic</text>
 <pinref part="R3" gate="R" pin="1"/>
 <wire x1="96.52" y1="113.03" x2="64.77" y2="113.03" width="0.1524" layer="91"/>
 <pinref part="R1" gate="R" pin="2"/>
+<wire x1="64.77" y1="115.57" x2="64.77" y2="113.03" width="0.1524" layer="91"/>
 <junction x="64.77" y="113.03"/>
 </segment>
 </net>
@@ -9198,19 +9198,19 @@ Designed by Watterott electronic</text>
 <segment>
 <pinref part="R2" gate="R" pin="2"/>
 <pinref part="R3" gate="R" pin="2"/>
-<wire x1="64.77" y1="127" x2="64.77" y2="123.19" width="0.1524" layer="91"/>
-<wire x1="64.77" y1="123.19" x2="67.31" y2="123.19" width="0.1524" layer="91"/>
-<wire x1="67.31" y1="123.19" x2="67.31" y2="115.57" width="0.1524" layer="91"/>
-<junction x="64.77" y="123.19"/>
+<wire x1="64.77" y1="125.73" x2="64.77" y2="128.27" width="0.1524" layer="91"/>
+<wire x1="64.77" y1="128.27" x2="69.85" y2="128.27" width="0.1524" layer="91"/>
+<wire x1="69.85" y1="128.27" x2="69.85" y2="115.57" width="0.1524" layer="91"/>
 <pinref part="GPS" gate="IC" pin="RF_OUT"/>
-<wire x1="67.31" y1="115.57" x2="96.52" y2="115.57" width="0.1524" layer="91"/>
+<wire x1="69.85" y1="115.57" x2="96.52" y2="115.57" width="0.1524" layer="91"/>
+<junction x="64.77" y="128.27"/>
 </segment>
 </net>
 <net name="OUT" class="0">
 <segment>
 <pinref part="R2" gate="R" pin="1"/>
 <pinref part="OUT" gate="J" pin="SIGNAL"/>
-<wire x1="53.34" y1="127" x2="54.61" y2="127" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="128.27" x2="54.61" y2="128.27" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="IN" class="0">
@@ -9242,10 +9242,10 @@ Designed by Watterott electronic</text>
 <wire x1="121.92" y1="80.01" x2="119.38" y2="80.01" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="J3" gate="J" pin="1"/>
+<pinref part="J2" gate="J" pin="1"/>
 <pinref part="VCC3" gate="G$1" pin="VCCIO"/>
-<wire x1="203.2" y1="128.27" x2="182.88" y2="128.27" width="0.1524" layer="91"/>
-<wire x1="182.88" y1="128.27" x2="182.88" y2="130.81" width="0.1524" layer="91"/>
+<wire x1="204.47" y1="100.33" x2="185.42" y2="100.33" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="100.33" x2="185.42" y2="102.87" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
