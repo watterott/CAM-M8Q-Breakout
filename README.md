@@ -13,7 +13,3 @@ Breakout with u-blox CAM-M8Q Multi GNSS Module.
 
 ## Shop
 * [CAM-M8Q-Breakout](http://www.watterott.com/en/CAM-M8Q-Breakout)
-
-
-## Hardware
-* [Schematics + Layout](https://github.com/watterott/CAM-M8Q-Breakout/tree/master/hardware)
