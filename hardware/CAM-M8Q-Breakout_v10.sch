@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -8960,6 +8960,7 @@ all kinds in 0402 and 0603</description>
 License. http://creativecommons.org/licenses/by-sa/4.0/
 
 Designed by Watterott electronic</text>
+<text x="111.76" y="73.66" size="1.778" layer="97">VCC and VIO not connected as default.</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="F" x="0" y="0"/>
